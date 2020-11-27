@@ -23,6 +23,33 @@ a {
 .navbar-brand {
   font-size: 30px;
 }
+.on{
+  
+  margin: auto;
+  text-align: center;
+  background-color: rgb(233, 130, 13);
+  width: 160px;
+  height: 40px;
+  border: 2px solid red;
+}
+.off{
+  
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  width: 160px;
+  height: 40px;
+  border: 2px solid white;
+}
+.num{
+  font-size: 30px;
+  padding: 40px;
+}
+button{
+ 
+  margin: 5px;
+}
 /* .nav-link{
 
 } */

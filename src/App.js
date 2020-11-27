@@ -3,17 +3,17 @@ import './App.css';
 import Header from './components/Header';
 import OnButton from './components/OnButton';
 import Sidebar from './components/Sidebar';
-
+import State from './components/State';
 import logo from './images/img.jpg';
 
 
 function App() {
   return (
     <>
-    
-   <Header />
+    <State />
+   {/* <Header />
   <Sidebar /> 
-  <OnButton />
+  <OnButton /> */}
   {/* <Sidebar color= 'red'/>
   <Sidebar color= 'blue'/>
   <Sidebar color= 'yellow'/> */}
