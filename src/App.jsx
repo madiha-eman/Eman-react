@@ -3,6 +3,9 @@ import './App.css';
 import Header from './components/Header';
 import OnButton from './components/OnButton';
 import Sidebar from './components/Sidebar';
+import Api from './components/Api';
+import Api1 from './components/Api1';
+import ApiUser from './components/ApiUser';
 import State from './components/State';
 import logo from './images/img.jpg';
 
@@ -10,7 +13,10 @@ import logo from './images/img.jpg';
 function App() {
   return (
     <>
-    <State />
+    <Api />
+    <Api1 />
+    <ApiUser />
+    {/* <State /> */}
    {/* <Header />
   <Sidebar /> 
   <OnButton /> */}
