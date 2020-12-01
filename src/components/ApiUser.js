@@ -11,33 +11,24 @@ function ApiUser (){
 },[])
 const post = id ?
 (<div>
-    <ul>
-       {id.map(item=>(
-    <>
-       <li>
+ {id.map(item=>(
+    
+     <div>
        <h1>{item.id}</h1>   
         <h2>{item.title}</h2>
        <p>{item.body}</p>
-       </li>
-    </>
-       )
-        )}
-        </ul>
-    </div> ): (<p>loding</p>)
+       </div>
+       
+ ))}
+       </div>
+     ): (<p>loding</p>)
+    
 console.log(id)
-    return(
-<div>
-<ul>
-   {id.map(item=>(
-<>
-   <li><h2>{item.title}</h2>
-   <p>{item.body}</p>
-   </li>
-</>
-   )
-    )}
-    </ul>
-</div>        
+    return( 
+       <div>
+          {post}
+       </div>
     )
 }
+
 export default ApiUser;

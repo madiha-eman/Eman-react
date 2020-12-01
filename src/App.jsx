@@ -8,14 +8,17 @@ import Api1 from './components/Api1';
 import ApiUser from './components/ApiUser';
 import State from './components/State';
 import logo from './images/img.jpg';
+import Todos from './components/Todos';
 
 
 function App() {
   return (
     <>
+    <Todos />
     <Api />
     <Api1 />
     <ApiUser />
+
     {/* <State /> */}
    {/* <Header />
   <Sidebar /> 
