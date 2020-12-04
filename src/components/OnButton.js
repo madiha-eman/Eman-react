@@ -1,19 +1,19 @@
-import React from 'react';
+// import React from 'react';
 
-class OnButton extends React.Component {
+// class OnButton extends React.Component {
     
-    constructor(props){
-        super(props)
-        this.state = {
+//     constructor(props){
+//         super(props)
+//         this.state = {
             
-        }
-    }
-    handleOn = () =>{
-        console.log('hi there')
-        this.setState ({
-            backgroundColor:'white'
-        }) 
-     }
+//         }
+//     }
+//     handleOn = () =>{
+//         console.log('hi there')
+//         this.setState ({
+//             backgroundColor:'white'
+//         }) 
+//      }
     //  handleOff = () =>{
     //     console.log('bye')
     //     this.setState ({
@@ -58,9 +58,9 @@ class OnButton extends React.Component {
     //      })
     //  }
 
-     render (){
-          console.log(this.state)
-    return (
+    //  render (){
+    //       console.log(this.state)
+    // return (
        
         <>
         
@@ -79,7 +79,7 @@ class OnButton extends React.Component {
         
        </div> */}
         </>
-    )
-    }
-    }
-export default OnButton;
+//     )
+//     }
+//     }
+// export default OnButton;

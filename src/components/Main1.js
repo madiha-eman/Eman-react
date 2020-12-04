@@ -5,7 +5,8 @@ class Main1 extends Component {
     constructor(props){
       super(props)
       this.state={
-          Name:{name: 'asma'}
+          name:'asma',
+          
       }
       console.log(this.state.name)
 
