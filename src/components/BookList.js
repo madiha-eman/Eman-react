@@ -1,26 +1,27 @@
-import React,{ useState, useContext} from 'react'
-import { BookContext } from '../context/BookContext';
-import { ThemeContext } from '../context/ThemeContext';
-
+import React, {useContext, useState} from 'react'
+import { Book } from '../context/BookContext';
+import {ThemeContext} from '../context/ThemeContext'
 function BookList() {
-    const {isLight, light, dark} = useContext(ThemeContext)
-    const ui = isLight? light : dark;
-    const {book1} = useContext(BookContext);
+    const {isLight, light, dark}= useContext(ThemeContext);
+    const [books , setbooks] = useContext(Book);
+    var nextId= books.length +1;
+    console.log(books)
+    const ui = isLight ? light : dark;
+    //console.log(ui)
 
-    // console.log(book1)
     return (
-    
-        <div style={{background: ui.bg, color:ui.text}}>
-            {/* <button onClick={}></button> */}
-           <ul>
-               {book1.map((item)=>(
-                   <li key={item.name}>{`${item.name} written by ${item.author} `}</li>
-               ))}
-           </ul>
-           {/* <button onClick={this.handle}>Theme</button> */}
+        //{name: 'newbook', author: 'xyz'}
+        <div style={{backgroundColor: ui.bg, color: ui.text}}>
+            <button onClick={()=>setbooks([...books,{name:'Yaram',author:'sumaira', id:nextId}])}>Add</button>
+            <ul >
+                {books.map((item)=>(
+
+                <li key={item.id}>{`${item.name} is written by ${item.author}`}</li>
+               )
+                )}
+            </ul>
         </div>
     )
 }
-
 
 export default BookList;

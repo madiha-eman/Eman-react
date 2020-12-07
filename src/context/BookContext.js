@@ -1,38 +1,21 @@
-import React, { Component, createContext  } from 'react'
-export const BookContext = createContext();
+import React,{createContext,useState} from 'react'
+export var Book = createContext();
 
-export default class BookContextProvider extends Component {
-    state ={
-        book1:
-    }
-    render() {
-        console.log(this.props.children)
-        return (
-            <div>
-              <BookContext.Provider value={{...this.state}}>
-                  {this.props.children}
-                  </BookContext.Provider>  
-            </div>
-        )
-    }
-}
-import React, {} from 'react'
-export const BookContext = createContext();
-
-
-function BookContext() {
-    const [books,useBooks]= useState([
-        {name: 'htmlcss', author: 'jon ducket'},
-    {name: 'React', author: 'dave ceddia'},
-    {name: 'JS', author: 'Mark'},
-
-    ])
-    return (
-        <div>
-            
-        </div>
+function BookContext(props) {
+const [books, setbooks] = useState(
+    [    
+ {name: 'Htmlcss', author: 'Jon Ducket', id:1},
+{name: 'React', author: 'Dave Ceddia',id:2},
+{name: 'JS', author: 'Mark',id:3}
+])   
+ return (
+     <Book.Provider value={[books, setbooks]}>
+         {props.children}
+     </Book.Provider>
+        
     )
 }
 
 export default BookContext
+
 

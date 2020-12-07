@@ -12,16 +12,16 @@ import Todos from './components/Todos';
 import Main1 from './components/Main1';
 import ThemeContextProvider from './context/ThemeContext';
 import BookList from './components/BookList';
-import BookContextProvider from './context/BookContext';
+import BookContext from './context/BookContext';
 
 
 function App() {
   return (
     <>
     <ThemeContextProvider>
-      <BookContextProvider >
+      <BookContext >
       <BookList />
-      </BookContextProvider>
+      </BookContext>
     </ThemeContextProvider>
     {/* <Main1 /> */}
     {/* <Todos />
